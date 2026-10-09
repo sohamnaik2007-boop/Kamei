@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": 1,
+    "name": "Classic T-Shirt",
+    "price": 499,
+    "category": "T-Shirts",
+    "image": "images/tshirt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Blue Jeans",
+    "price": 999,
+    "category": "Jeans",
+    "image": "images/jeans.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Casual Shoes",
+    "price": 1499,
+    "category": "Shoes",
+    "image": "images/shoes.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Denim Jacket",
+    "price": 1299,
+    "category": "Jackets",
+    "image": "images/jacket.jpg"
+  }
+]
