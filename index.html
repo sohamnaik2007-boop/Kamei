@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamei - Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Kamei</h1>
+    <p>Your Style, Your Choice</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+
+<section class="hero">
+    <h2>Upgrade Your Style</h2>
+    <p>Discover the latest fashion at affordable prices.</p>
+    <a href="#products" class="shop-btn">Shop Now</a>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <input type="text" id="search" placeholder="Search products...">
+
+    <div class="filters">
+        <button onclick="filterProducts('All')">All</button>
+        <button onclick="filterProducts('T-Shirts')">T-Shirts</button>
+        <button onclick="filterProducts('Jeans')">Jeans</button>
+        <button onclick="filterProducts('Shoes')">Shoes</button>
+    </div>
+
+    <div class="product-container" id="product-list"></div>
+</section>
+
+<section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<section id="about">
+    <h2>About Kamei</h2>
+    <p>Your destination for affordable and trendy fashion.</p>
+</section>
+
+<footer>
+    <p>© 2026 StyleHub. College Mini Project.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
