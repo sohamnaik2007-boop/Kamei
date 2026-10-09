@@ -27,5 +27,40 @@
     "price": 1299,
     "category": "Jackets",
     "image": "images/jacket.jpg"
+  },
+  {
+  "id": 7,
+  "name": "White Hoodie",
+  "price": 1299,
+  "category": "Jackets",
+  "image": "images/hoodie.jpg"
+  },
+  {
+  "id": 8,
+  "name": "Running Shoes",
+  "price": 1899,
+  "category": "Shoes",
+  "image": "images/shoes.jpg"
+  },
+  {
+  "id": 9,
+  "name": "Slim Fit Jeans",
+  "price": 1099,
+  "category": "Jeans",
+  "image": "images/jeans.jpg"
+  },
+  {
+  "id": 10,
+  "name": "Printed T-Shirt",
+  "price": 699,
+  "category": "T-Shirts",
+  "image": "images/tshirt.jpg"
+  },
+  {
+  "id": 11,
+  "name": "Winter Jacket",
+  "price": 1999,
+  "category": "Jackets",
+  "image": "images/jacket.jpg"
   }
-]
+  ]
