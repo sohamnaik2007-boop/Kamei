@@ -1,0 +1,106 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .register-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ccc;
+        }
+
+        .register-container h2 {
+            text-align: center;
+        }
+
+        .register-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 12px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .register-container p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-container">
+    <h2>Create Your Account</h2>
+
+    <form id="registerForm">
+        <input type="text" id="name"
+               placeholder="Full Name" required>
+
+        <input type="email" id="email"
+               placeholder="Email Address" required>
+
+        <input type="password" id="password"
+               placeholder="Create Password"
+               minlength="8" required>
+
+        <input type="password" id="confirmPassword"
+               placeholder="Confirm Password"
+               minlength="8" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+
+    <p>Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+    <p><a href="index.html">Back to Home</a></p>
+</div>
+
+<script>
+    document.getElementById("registerForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const password =
+                document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            const message =
+                document.getElementById("message");
+
+            if (password !== confirmPassword) {
+                message.textContent = "Passwords do not match!";
+                message.style.color = "red";
+                return;
+            }
+
+            message.textContent =
+                "Registration form completed! Account creation needs a backend.";
+            message.style.color = "green";
+        });
+</script>
+
+</body>
+</html>
+```
